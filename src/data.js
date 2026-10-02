@@ -33,10 +33,8 @@ export const about = [
    training under the guidance of
    <a href="https://ist.dlmu.edu.cn/info/1287/7408.htm" target="_blank" rel="noopener noreferrer">Prof. Jiqing Zhang</a>.
    My current research interest lies in enabling robots to perceive, understand, and interact with the real world, and ultimately make intelligent decisions. 
-   Toward this goal, I am particularly interested in image processing, multimodal learning, 3D perception and depth estimation, and Vision-Language-Action (VLA) models.
+   Toward this goal, I am particularly interested in image processing and multimodal learning.
    `,
-  `Beyond research, I also enjoy programming, writing, and exploring delicious
-   food.`,
 ];
 
 export const news = [
