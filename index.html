@@ -117,13 +117,17 @@
         <section id="papers">
           <h2>Papers</h2>
           <hr>
-          
+
           <div class="pubs">
             <div class="pub">
               <p class="pub-title"><strong>Progressive Pseudo-Label Optimization for Point-Supervised Remote Sensing Change Detection</strong></p>
               <img src="/assets/prscd.DZZNiNbD_ZEf340.webp" alt="Overview of the proposed two-stage point-supervised change detection framework." loading="lazy" decoding="async" width="620" height="254" class="pub-image">
               <p class="pub-meta muted">Hailong Ning, <strong>Hao Wang</strong></p>
               <p class="pub-meta muted">Under review</p>
+              <div class="pub-actions">
+                <a class="pill" href="https://arxiv.org/abs/2609.02171" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a class="pill" href="https://github.com/hao-wang1216/Point-Supervised-Remote-Sensing-Change-Detection" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
             </div>
 
             <script type="module">document.querySelectorAll(`.pub`).forEach(e=>{let t=e.querySelectorAll(`[data-toggle]`),n=e.querySelectorAll(`[data-panel]`),r=null,i=()=>{t.forEach(e=>{let t=e.dataset.toggle===r;e.classList.toggle(`is-open`,t),e.setAttribute(`aria-expanded`,String(t))}),n.forEach(e=>{e.hidden=e.dataset.panel!==r})};t.forEach(e=>{e.addEventListener(`click`,()=>{r=r===e.dataset.toggle?null:e.dataset.toggle,i()})});let a=e.querySelector(`.pill-copy`),o=e.querySelector(`[data-panel='bibtex'] pre`),s;a?.addEventListener(`click`,async()=>{try{await navigator.clipboard.writeText(o.textContent),a.textContent=`Copied`,clearTimeout(s),s=setTimeout(()=>a.textContent=`Copy`,1600)}catch{a.textContent=`Copy`}})});</script>
