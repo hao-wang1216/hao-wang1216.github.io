@@ -96,17 +96,17 @@ export const workingPapers = [
 
 export const experience = [];
 
-export const projects = [
-  {
-    org: "BIXOCEAN · 边际领域",
-    logo: "/images/bixocean-logo.png",
-    url: "https://bixocean.com/",
-    desc:
-      "Working on algorithm research and development for underwater embodied robotics.",
-    role: "Algorithm Intern · Marine Embodied Intelligence",
-    date: "2026 - Present",
-  },
-];
+// export const projects = [
+//   {
+//     org: "BIXOCEAN · 边际领域",
+//     logo: "/images/bixocean-logo.png",
+//     url: "https://bixocean.com/",
+//     desc:
+//       "Working on algorithm research and development for underwater embodied robotics.",
+//     role: "Algorithm Intern · Marine Embodied Intelligence",
+//     date: "2026 - Present",
+//   },
+// ];
 
 export const awards = [
   {
