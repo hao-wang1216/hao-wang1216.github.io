@@ -39,7 +39,8 @@ const withLogo = items.some((e) => e.logo);
               <Image
                 src={e.logo}
                 alt=""
-                width={48}
+                width={e.logo.format === "svg" ? 48 : 192}
+                format={e.logo.format === "svg" ? undefined : "png"}
                 loading="lazy"
               />
             ) : null}
