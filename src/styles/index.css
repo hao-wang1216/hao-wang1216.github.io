@@ -299,7 +299,7 @@ section hr {
 }
 .pub.has-image {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
+  grid-template-columns: 240px minmax(0, 1fr);
   gap: 24px;
   align-items: center;
 }
@@ -312,8 +312,8 @@ section hr {
   margin: 0;
 }
 .pub-image {
-  width: 180px;
-  height: 90px;
+  width: 240px;
+  height: 120px;
   object-fit: contain;
   display: block;
   margin: 0;
