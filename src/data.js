@@ -5,6 +5,8 @@
 // with Astro's `set:html`.
 import photo from "./assets/photo.jpg";
 import dlmuLogo from "./assets/logos/dlmu.svg";
+// Official red emblem: https://xb.hnu.edu.cn/info/1043/1558.htm
+import hnuLogo from "./assets/logos/hnu.jpg";
 import prscdImage from "./assets/projects/prscd.png";
 import mapSamImage from "./assets/projects/map-sam.png";
 import unicodImage from "./assets/projects/unicod.png";
@@ -34,8 +36,10 @@ export const about = [
    at Dalian Maritime University and
    <a href="https://ninghailong.github.io/" target="_blank" rel="noopener noreferrer">Prof. Hailong Ning</a>
    at Xi'an University of Posts and Telecommunications.
-   I have been admitted to the direct-entry Ph.D. program at Hunan University through the recommendation-based admission pathway,
-   with enrollment expected in 2027. My prospective co-advisors are Prof. Shutao Li and Prof. Renwei Dian.`,
+   I have been admitted to Hunan University's direct-entry Ph.D. program for 2027.
+   My prospective co-advisors are
+   <a href="https://robotics.hnu.edu.cn/info/1176/2967.htm" target="_blank" rel="noopener noreferrer">Prof. Shutao Li</a> and
+   <a href="https://robotics.hnu.edu.cn/info/1176/2958.htm" target="_blank" rel="noopener noreferrer">Prof. Renwei Dian</a>.`,
   `My research interests center on robotic visual perception, including image segmentation and object detection,
    with a focus on weakly supervised and unsupervised learning, as well as large multimodal models.
    I am also exploring large language models (LLMs) and AI agents.`,
@@ -51,10 +55,11 @@ export const news = [
 export const education = [
   {
     org: "Hunan University",
-    desc: "Direct-entry Ph.D. program · Admitted; enrollment expected in 2027",
+    desc: "Ph.D.",
     role: "Prospective co-advisors: Prof. Shutao Li and Prof. Renwei Dian",
     date: "Expected 2027",
     upcoming: true,
+    logo: hnuLogo,
     url: "https://www.hnu.edu.cn/",
   },
   {
@@ -124,8 +129,8 @@ export const experience = [];
 export const projects = [];
 
 export const academicService = [
-  { org: "ICASSP", role: "Conference Reviewer", date: "2027" },
-  { org: "AAAI", role: "Conference Reviewer", date: "2027" },
+  "AAAI (2027)",
+  "ICASSP (2027)",
 ];
 
 export const teaching = [];

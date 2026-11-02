@@ -153,7 +153,7 @@ const jsonLd = {
       {
         academicService.length > 0 && (
           <Section id="academic-service" title="Academic Service">
-            <EntryList items={academicService} />
+            <p>{academicService.join(", ")}</p>
           </Section>
         )
       }
