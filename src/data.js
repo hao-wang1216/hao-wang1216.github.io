@@ -84,7 +84,10 @@ export const workingPapers = [
       "Overview of the proposed two-stage point-supervised change detection framework.",
     links: [
       { label: "Paper", href: "https://arxiv.org/abs/2609.02171" },
-      { label: "Code", href: "https://github.com/hao-wang1216/Point-Supervised-Remote-Sensing-Change-Detection" },
+      {
+        label: "Code",
+        href: "https://github.com/hao-wang1216/Point-Supervised-Remote-Sensing-Change-Detection",
+      },
     ],
   },
   {
@@ -105,10 +108,9 @@ export const workingPapers = [
     authors: "Jiqing Zhang, <strong>Hao Wang</strong>",
     meta: "Under review",
     image: unicodImage,
-    imageAlt: "Overview of Toward Unified Cross-Modal Camouflaged Object Detection.",
-    links: [
-      { label: "Code", href: "https://github.com/hao-wang1216/UniNet" }
-    ],
+    imageAlt:
+      "Overview of Toward Unified Cross-Modal Camouflaged Object Detection.",
+    links: [{ label: "Code", href: "https://github.com/hao-wang1216/UniNet" }],
   },
 ];
 
@@ -128,10 +130,7 @@ export const experience = [];
 
 export const projects = [];
 
-export const academicService = [
-  "AAAI (2027)",
-  "ICASSP (2027)",
-];
+export const academicService = ["AAAI (2027)", "ICASSP (2027)"];
 
 export const teaching = [];
 

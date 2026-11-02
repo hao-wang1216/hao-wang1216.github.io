@@ -1,5 +1,5 @@
 ---
-// One paper: title, authors, venue, then a row of buttons. Abstract and
+// One paper: thumbnail on the left, publication details on the right. Abstract and
 // BibTeX expand in place; Paper, Code and anything else in `links` open
 // externally.
 //
@@ -21,68 +21,81 @@ const {
 } = Astro.props;
 ---
 
-<div class="pub">
-  <p class="pub-title">
-    <strong>{title}</strong>
-  </p>
+<div class:list={["pub", image && "has-image"]}>
   {
     image && (
       <Image
         class="pub-image"
         src={image}
         alt={imageAlt}
-        width={620}
+        width={540}
         loading="lazy"
       />
     )
   }
-  {authors && <p class="pub-meta muted" set:html={authors} />}
-  {venue && <p class="pub-venue" set:html={venue} />}
-  {meta && <p class="pub-meta muted">{meta}</p>}
+  <div class="pub-details">
+    <p class="pub-title">
+      <strong>{title}</strong>
+    </p>
+    {authors && <p class="pub-meta muted" set:html={authors} />}
+    {venue && <p class="pub-venue" set:html={venue} />}
+    {meta && <p class="pub-meta muted">{meta}</p>}
 
-  {
-    (abstract || bibtex || links.length > 0) && (
-      <div class="pub-actions">
-        {abstract && (
-          <button
-            type="button"
-            class="pill"
-            aria-expanded="false"
-            data-toggle="abstract"
-          >
-            Abstract
-          </button>
-        )}
-        {links.map((l) => (
-          <a class="pill" href={l.href} target="_blank" rel="noopener noreferrer">
-            {l.label}
-          </a>
-        ))}
-        {bibtex && (
-          <button
-            type="button"
-            class="pill"
-            aria-expanded="false"
-            data-toggle="bibtex"
-          >
-            BibTeX
-          </button>
-        )}
-      </div>
-    )
-  }
+    {
+      (abstract || bibtex || links.length > 0) && (
+        <div class="pub-actions">
+          {abstract && (
+            <button
+              type="button"
+              class="pub-link"
+              aria-expanded="false"
+              data-toggle="abstract"
+            >
+              [Abstract]
+            </button>
+          )}
+          {links.map((l) => (
+            <a
+              class="pub-link"
+              href={l.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              [{l.label}]
+            </a>
+          ))}
+          {bibtex && (
+            <button
+              type="button"
+              class="pub-link"
+              aria-expanded="false"
+              data-toggle="bibtex"
+            >
+              [BibTeX]
+            </button>
+          )}
+        </div>
+      )
+    }
 
-  {abstract && <div class="pub-panel" data-panel="abstract" hidden>{abstract}</div>}
-  {
-    bibtex && (
-      <div class="pub-panel" data-panel="bibtex" hidden>
-        <button type="button" class="pill pill-copy">
-          Copy
-        </button>
-        <pre>{bibtex}</pre>
-      </div>
-    )
-  }
+    {
+      abstract && (
+        <div class="pub-panel" data-panel="abstract" hidden>
+          {abstract}
+        </div>
+      )
+    }
+    {
+      bibtex && (
+        <div class="pub-panel" data-panel="bibtex" hidden>
+          <button type="button" class="pill pill-copy">
+            Copy
+          </button>
+          <pre>{bibtex}</pre>
+        </div>
+      )
+    }
+  </div>
 </div>
 
 <script>

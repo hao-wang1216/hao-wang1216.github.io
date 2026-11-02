@@ -295,26 +295,34 @@ section hr {
 .pubs {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 28px;
+}
+.pub.has-image {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+.pub-details {
+  min-width: 0;
 }
 .pub-title {
-  font-size: 18.5px;
+  font-size: 17.5px;
   line-height: 1.5;
   margin: 0;
 }
 .pub-image {
-  width: min(100%, 620px);
-  height: auto;
+  width: 180px;
+  height: 90px;
+  object-fit: contain;
   display: block;
-  margin: 12px 0 12px;
-  border: 1px solid var(--color-divider);
-  border-radius: 5px;
-  background: var(--color-surface);
+  margin: 0;
+  background: #fff;
 }
 .pub-meta {
-  font-size: 16.5px;
+  font-size: 16px;
   line-height: 1.5;
-  margin: 6px 0 0;
+  margin: 4px 0 0;
 }
 .pub-venue {
   font-size: 16.5px;
@@ -334,6 +342,25 @@ section hr {
 }
 .entry-actions {
   margin-top: 10px;
+}
+.pub-actions {
+  gap: 8px;
+  margin-top: 4px;
+}
+.pub-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-link);
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pub-link:hover,
+.pub-link.is-open {
+  text-decoration: underline;
 }
 .pill {
   display: inline-flex;
@@ -477,6 +504,13 @@ footer {
 }
 
 /* ── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 540px) {
+  .pub.has-image {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+
 @media (max-width: 1100px) {
   :root {
     --gutter: 48px;
