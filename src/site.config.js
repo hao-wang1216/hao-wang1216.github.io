@@ -36,13 +36,13 @@ export const site = {
   // work on — this is what Google and, increasingly, LLMs quote back.
   description:
     "Hao Wang is an undergraduate student at Dalian Maritime University, " +
-    "working on deep learning, computer vision, camouflaged object detection, " +
-    "multimodal learning and remote sensing change detection.",
+    "with research interests in robotic visual perception, image segmentation, object detection, " +
+    "weakly supervised and unsupervised learning, large multimodal models, LLMs and AI agents.",
 
   // Shorter line for link previews (WeChat, X, LinkedIn, Slack).
   socialDescription:
-    "Undergraduate student at Dalian Maritime University. Deep learning, " +
-    "computer vision and multimodal perception.",
+    "Undergraduate student at Dalian Maritime University. Robotic visual perception, " +
+    "multimodal models, LLMs and AI agents.",
 
   // ── Structured data (schema.org Person) ─────────────────────────────────
   // Lets search engines and AI assistants state plainly who you are, where you
@@ -60,13 +60,14 @@ export const site = {
     location: { locality: "Dalian", country: "CN" },
     // Research keywords, ordered from most to least central.
     knowsAbout: [
-      "Deep Learning",
-      "Computer Vision",
-      "Neural Network Design",
-      "Camouflaged Object Detection",
-      "Salient Object Detection",
-      "Multimodal Representation Learning",
-      "Remote Sensing Change Detection",
+      "Robotic Visual Perception",
+      "Image Segmentation",
+      "Object Detection",
+      "Weakly Supervised Learning",
+      "Unsupervised Learning",
+      "Large Multimodal Models",
+      "Large Language Models",
+      "AI Agents",
     ],
   },
 

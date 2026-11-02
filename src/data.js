@@ -29,12 +29,16 @@ export const profile = {
 
 export const about = [
   `I am currently an undergraduate student at Dalian Maritime University.
-   During my undergraduate studies, I have primarily carried out research
-   training under the guidance of
-   <a href="https://ist.dlmu.edu.cn/info/1287/7408.htm" target="_blank" rel="noopener noreferrer">Prof. Jiqing Zhang</a>.
-   My current research interest lies in enabling robots to perceive, understand, and interact with the real world, and ultimately make intelligent decisions. 
-   Toward this goal, I am particularly interested in image processing and multimodal learning.
-   `,
+   During my undergraduate studies, I have conducted research under the guidance of
+   <a href="https://ist.dlmu.edu.cn/info/1287/7408.htm" target="_blank" rel="noopener noreferrer">Prof. Jiqing Zhang</a>
+   at Dalian Maritime University and
+   <a href="https://ninghailong.github.io/" target="_blank" rel="noopener noreferrer">Prof. Hailong Ning</a>
+   at Xi'an University of Posts and Telecommunications.
+   I have been admitted to the direct-entry Ph.D. program at Hunan University through the recommendation-based admission pathway,
+   with enrollment expected in 2027. My prospective co-advisors are Prof. Shutao Li and Prof. Renwei Dian.`,
+  `My research interests center on robotic visual perception, including image segmentation and object detection,
+   with a focus on weakly supervised and unsupervised learning, as well as large multimodal models.
+   I am also exploring large language models (LLMs) and AI agents.`,
 ];
 
 export const news = [
@@ -45,6 +49,14 @@ export const news = [
 ];
 
 export const education = [
+  {
+    org: "Hunan University",
+    desc: "Direct-entry Ph.D. program · Admitted; enrollment expected in 2027",
+    role: "Prospective co-advisors: Prof. Shutao Li and Prof. Renwei Dian",
+    date: "Expected 2027",
+    upcoming: true,
+    url: "https://www.hnu.edu.cn/",
+  },
   {
     org: "Dalian Maritime University",
     role: "Undergraduate Student",
@@ -59,13 +71,16 @@ export const publications = [];
 export const workingPapers = [
   {
     title:
-      "Progressive Pseudo-Label Optimization for Point-Supervised Remote Sensing Change Detection",
+      "Progressive Pseudo-Label Optimization for Point-Supervised Change Detection",
     authors: "Hailong Ning, <strong>Hao Wang</strong>",
     meta: "Under review",
     image: prscdImage,
     imageAlt:
       "Overview of the proposed two-stage point-supervised change detection framework.",
-    links: [],
+    links: [
+      { label: "Paper", href: "https://arxiv.org/abs/2609.02171" },
+      { label: "Code", href: "https://github.com/hao-wang1216/Point-Supervised-Remote-Sensing-Change-Detection" },
+    ],
   },
   {
     title:
@@ -106,13 +121,13 @@ export const experience = [];
 //   },
 // ];
 
-export const awards = [
-  {
-    org: "National Scholarship for Undergraduate Students",
-    date: "2024",
-  },
+export const projects = [];
+
+export const academicService = [
+  { org: "ICASSP", role: "Conference Reviewer", date: "2027" },
+  { org: "AAAI", role: "Conference Reviewer", date: "2027" },
 ];
 
 export const teaching = [];
 
-export const lastUpdated = "August 2026";
+export const lastUpdated = "November 2026";

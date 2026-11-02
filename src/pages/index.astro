@@ -17,7 +17,7 @@ import {
   workingPapers,
   experience,
   projects,
-  awards,
+  academicService,
   teaching,
   lastUpdated,
 } from "../data.js";
@@ -41,7 +41,7 @@ const jsonLd = {
     affiliation: { "@type": "CollegeOrUniversity", ...site.seo.affiliation },
   }),
   alumniOf: education
-    .filter((e) => e.url && e.org !== site.seo.affiliation?.name)
+    .filter((e) => e.url && !e.upcoming && e.org !== site.seo.affiliation?.name)
     .map((e) => ({
       "@type": "CollegeOrUniversity",
       name: e.org,
@@ -151,9 +151,9 @@ const jsonLd = {
       }
 
       {
-        awards.length > 0 && (
-          <Section id="awards" title="Awards & Grants">
-            <EntryList items={awards} />
+        academicService.length > 0 && (
+          <Section id="academic-service" title="Academic Service">
+            <EntryList items={academicService} />
           </Section>
         )
       }
