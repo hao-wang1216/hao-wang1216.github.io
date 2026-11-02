@@ -9,6 +9,7 @@
 import { Image } from "astro:assets";
 
 const {
+  number,
   title,
   authors,
   venue,
@@ -22,24 +23,25 @@ const {
 ---
 
 <div class:list={["pub", image && "has-image"]}>
+  <span class="pub-number">{number}.</span>
   {
     image && (
       <Image
         class="pub-image"
         src={image}
         alt={imageAlt}
-        width={720}
+        width={840}
         loading="lazy"
       />
     )
   }
   <div class="pub-details">
     <p class="pub-title">
-      <strong>{title}</strong>
+      {title}
     </p>
-    {authors && <p class="pub-meta muted" set:html={authors} />}
+    {authors && <p class="pub-meta" set:html={authors} />}
     {venue && <p class="pub-venue" set:html={venue} />}
-    {meta && <p class="pub-meta muted">{meta}</p>}
+    {meta && <p class="pub-venue">{meta}</p>}
 
     {
       (abstract || bibtex || links.length > 0) && (
