@@ -407,13 +407,13 @@ section hr {
   align-items: baseline;
 }
 .entries.has-logo .entry {
-  grid-template-columns: 48px 1fr auto;
+  grid-template-columns: 72px 1fr auto;
   gap: 20px;
   align-items: center; /* steadier than baseline once a logo is in the row */
 }
 .entry-logo {
-  width: 48px;
-  height: 48px;
+  width: 72px;
+  height: 72px;
   display: block;
 }
 .entry-logo img {

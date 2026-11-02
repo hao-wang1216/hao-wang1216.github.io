@@ -11,7 +11,7 @@ import { Image } from "astro:assets";
 //   desc   one or two sentences on what it is
 //   role   your role, advisor, or anything secondary
 //   date   right-hand column; keep the format consistent across sections
-//   logo   imported image, shown at 48px
+//   logo   imported image, shown at 72px
 //   image  imported project/research image, shown above the description
 //   url    makes `org` a link
 //   links  a row of outlined buttons — Code, Website, Docs, Slides, whatever
@@ -30,8 +30,8 @@ const withLogo = items.some((e) => e.logo);
               <img
                 src={e.logo}
                 alt=""
-                width="48"
-                height="48"
+                width="72"
+                height="72"
                 loading="lazy"
                 decoding="async"
               />
@@ -39,7 +39,7 @@ const withLogo = items.some((e) => e.logo);
               <Image
                 src={e.logo}
                 alt=""
-                width={e.logo.format === "svg" ? 48 : 192}
+                width={e.logo.format === "svg" ? 72 : 288}
                 format={e.logo.format === "svg" ? undefined : "png"}
                 loading="lazy"
               />
