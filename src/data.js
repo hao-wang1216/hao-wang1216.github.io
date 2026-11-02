@@ -56,7 +56,7 @@ export const education = [
   {
     org: "Hunan University",
     desc: "Ph.D.",
-    role: "Prospective co-advisors: Prof. Shutao Li and Prof. Renwei Dian",
+    role: "Prof. Shutao Li and Prof. Renwei Dian",
     date: "Expected 2027",
     upcoming: true,
     logo: hnuLogo,
@@ -78,7 +78,7 @@ export const workingPapers = [
     title:
       "Progressive Pseudo-Label Optimization for Point-Supervised Change Detection",
     authors: "Hailong Ning, <strong>Hao Wang</strong>",
-    meta: "Under review",
+    meta: "Preprint",
     image: prscdImage,
     imageAlt:
       "Overview of the proposed two-stage point-supervised change detection framework.",
@@ -94,7 +94,7 @@ export const workingPapers = [
     title:
       "Modality-Agnostic Prompt Learning for Multi-Modal Camouflaged Object Detection",
     authors: "<strong>Hao Wang</strong>, Jiqing Zhang",
-    meta: "Under review",
+    meta: "Preprint",
     image: mapSamImage,
     imageAlt:
       "Overview of Modality-Agnostic Prompt Learning for Multi-Modal Camouflaged Object Detection.",
@@ -106,7 +106,7 @@ export const workingPapers = [
   {
     title: "Toward Unified Cross-Modal Camouflaged Object Detection",
     authors: "Jiqing Zhang, <strong>Hao Wang</strong>",
-    meta: "Under review",
+    meta: "Preprint",
     image: unicodImage,
     imageAlt:
       "Overview of Toward Unified Cross-Modal Camouflaged Object Detection.",
